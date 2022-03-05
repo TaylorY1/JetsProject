@@ -1,0 +1,5 @@
+Passenger Jet,Cessna 172,25,250,125000.25
+Fighter Jet,F-15E,500,500,5.50
+Cargo Plane,C-17,400,1000,6.50
+Fighter Jet,A-10,300,900,7.50
+Passenger Jet,Boeing 767,500,1500,3.20
