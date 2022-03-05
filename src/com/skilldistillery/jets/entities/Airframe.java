@@ -1,30 +1,29 @@
 package com.skilldistillery.jets.entities;
 
 public abstract class Airframe {
-	private String aType = "";
 	private String aName = "";
 	private double aMaxSpeed = 0.0;
 	private int aRange = 0;
 	private long aPrice = 000000;
+	private double maxFlyTime = 0;
 
 	public Airframe() {
+		super();
 	}
 
-	public Airframe(String aType, String aName, double aMaxSpeed, int aRange, long aPrice) {
+	public Airframe(String aName, double aMaxSpeed, int aRange, long aPrice) {
 		super();
-		this.aType = aType;
 		this.aName = aName;
 		this.aMaxSpeed = aMaxSpeed;
 		this.aRange = aRange;
 		this.aPrice = aPrice;
 	}
-
-	public String getaType() {
-		return aType;
+	public double getMaxFlyTime() {
+		maxFlyTime = aRange / aMaxSpeed;
+		return maxFlyTime;
 	}
-
-	public void setaType(String aType) {
-		this.aType = aType;
+	public void setMaxFlyTime(double maxFlyTime) {
+		this.maxFlyTime = maxFlyTime;
 	}
 
 	public String getaName() {
@@ -61,13 +60,17 @@ public abstract class Airframe {
 
 	@Override
 	public String toString() {
-		String output = "Airframe Type= " + aType + ", Airframe Name= " + aName + ", Airframes Max Speed= " + aMaxSpeed
-				+ ", Airframes Range= " + aRange + "Airframe Price= " + aPrice;
+		String output = " Airframe Name: " + aName + " Airframe Max Speed: " + aMaxSpeed + " Airframe Range: " + aRange
+				+ "Airframe Price: " + aPrice;
 		return output;
 	}
 
 	public void displayAirframe() {
 		String ftData = toString();
 		System.out.println(ftData);
+	}
+
+	public void fly() {
+		System.out.println("Takeoff! Max fly time is: " + getMaxFlyTime());
 	}
 }
