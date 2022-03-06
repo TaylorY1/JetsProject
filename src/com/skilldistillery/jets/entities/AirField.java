@@ -3,7 +3,6 @@ package com.skilldistillery.jets.entities;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -125,6 +124,7 @@ public class AirField {
 
 		System.out.println("Please type in one word as a name: (One word please)");
 		newName = sc.next();
+		sc.nextLine();
 		System.out.println("Please add a max speed in MPH: ");
 		newMaxSpeed = sc.nextDouble();
 		sc.nextLine();

@@ -1,6 +1,6 @@
 package com.skilldistillery.jets.entities;
 
-public class FighterJet extends Airframe {
+public class FighterJet extends Airframe implements CombatReady {
 
 	public FighterJet() {
 		super();

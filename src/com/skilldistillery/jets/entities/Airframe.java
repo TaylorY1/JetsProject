@@ -1,5 +1,7 @@
 package com.skilldistillery.jets.entities;
 
+import java.util.Objects;
+
 public abstract class Airframe {
 	private String aName = "";
 	private double aMaxSpeed = 0.0;
@@ -18,6 +20,7 @@ public abstract class Airframe {
 		this.aRange = aRange;
 		this.aPrice = aPrice;
 	}
+
 	public double getMaxFlyTime() {
 		maxFlyTime = aRange / aMaxSpeed;
 		return maxFlyTime;
@@ -72,5 +75,23 @@ public abstract class Airframe {
 
 	public void fly() {
 		System.out.println("Takeoff! Max fly time is: " + getMaxFlyTime());
+	}
+	@Override
+	public int hashCode() {
+		return Objects.hash(aMaxSpeed, aName, aPrice, aRange, maxFlyTime);
+	}
+	
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Airframe other = (Airframe) obj;
+		return Double.doubleToLongBits(aMaxSpeed) == Double.doubleToLongBits(other.aMaxSpeed)
+				&& Objects.equals(aName, other.aName) && aPrice == other.aPrice && aRange == other.aRange
+				&& Double.doubleToLongBits(maxFlyTime) == Double.doubleToLongBits(other.maxFlyTime);
 	}
 }
