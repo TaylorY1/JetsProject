@@ -156,6 +156,7 @@ public class AirField {
 	public void flyAllJets() {
 		for (Airframe airframe : jetsonA) {
 			airframe.fly();
+			airframe.toString();
 
 		}
 

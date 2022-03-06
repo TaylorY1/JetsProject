@@ -74,6 +74,7 @@ public abstract class Airframe {
 	}
 
 	public void fly() {
+		System.out.println(toString());
 		System.out.println("Takeoff! Max fly time is: " + getMaxFlyTime());
 	}
 	@Override
