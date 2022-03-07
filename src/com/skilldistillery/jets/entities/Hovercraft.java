@@ -16,9 +16,4 @@ public class Hovercraft extends Airframe {
 				+ " Price: " + getaPrice();
 	}
 
-//	public void fly() {
-	// Double maxFlyTime = aMaxSpeed / aRange;
-	// System.out.println(maxFlyTime);
-//.out.println("Big fans are on and we are now Hovering!");
-	//	}
 }

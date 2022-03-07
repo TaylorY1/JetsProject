@@ -1,7 +1,7 @@
 package com.skilldistillery.jets.entities;
 
 public class PassengerPlane extends Airframe {
-	
+
 	public PassengerPlane() {
 		super();
 	}
@@ -16,16 +16,4 @@ public class PassengerPlane extends Airframe {
 				+ getaRange() + " Price: " + getaPrice();
 	}
 
-//	@Override
-//	public void fly() {
-		// Double maxFlyTime = aMaxSpeed / aRange;
-		// System.out.println(maxFlyTime);
-//		System.out.println("All passengers are buckled up and we are flying!");
-//	}
-	// create a fly method that prints out the jets details and how long it can fly
-	// until it runs out of fuel
-	// using max range / max airspeed mph =
-//	}
-//variables for the passenger plane
-//have passenger plane fill up with people and take off 
 }

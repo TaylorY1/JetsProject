@@ -17,8 +17,8 @@ public class AirframeImp extends Airframe {
 
 	@Override
 	public String toString() {
-		return "Flying Ice Cream Truck:  \n Name:" + getaName() + " MaxSpeed is: " + getaMaxSpeed() + " Range is: " + getaRange()
-				+ " Price is: " + getaPrice();
+		return "Flying Ice Cream Truck:  \n Name:" + getaName() + " MaxSpeed is: " + getaMaxSpeed() + " Range is: "
+				+ getaRange() + " Price is: " + getaPrice();
 	}
 
 }

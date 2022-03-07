@@ -25,6 +25,7 @@ public abstract class Airframe {
 		maxFlyTime = aRange / aMaxSpeed;
 		return maxFlyTime;
 	}
+
 	public void setMaxFlyTime(double maxFlyTime) {
 		this.maxFlyTime = maxFlyTime;
 	}
@@ -75,13 +76,14 @@ public abstract class Airframe {
 
 	public void fly() {
 		System.out.println(toString());
-		System.out.println("Takeoff! Max fly time is: " + getMaxFlyTime());
+		System.out.println("Takeoff! Max fly time is: " + getMaxFlyTime() + " hours ");
 	}
+
 	@Override
 	public int hashCode() {
 		return Objects.hash(aMaxSpeed, aName, aPrice, aRange, maxFlyTime);
 	}
-	
+
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)

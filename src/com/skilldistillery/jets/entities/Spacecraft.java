@@ -12,13 +12,8 @@ public class Spacecraft extends Airframe {
 
 	@Override
 	public String toString() {
-		return "Spacecraft:  \n Name:" + getaName() + " Max Speed: " + getaMaxSpeed() + " Max Range: "
-				+ getaRange() + " Price: " + getaPrice();
+		return "Spacecraft:  \n Name:" + getaName() + " Max Speed: " + getaMaxSpeed() + " Max Range: " + getaRange()
+				+ " Price: " + getaPrice();
 	}
 
-//	public void fly() {
-	//Double	maxFlyTime =  aMaxSpeed /  aRange;
-	//System.out.println(maxFlyTime);
-//	System.out.println("3 . . 2 . . 1 . . Blastoff!");
-	//}
 }
